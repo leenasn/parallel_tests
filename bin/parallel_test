@@ -51,7 +51,7 @@ if options[:execute]
 else
   lib, name, task = {
     'test' => ["tests", "test", "test"],
-    'spec' => ["specs", "spec", "spec"],
+    'spec' => ["specs", "spec", "."],
     'features' => ["cucumber", "feature", "features"]
   }[options[:type]||'test']
 
